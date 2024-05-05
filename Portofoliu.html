@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portofoliu Personal</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #333;
+			color: white;
+			padding: 10px;
+			text-align: center;
+		}
+
+		nav {
+			background-color: #ccc;
+			padding: 10px;
+			text-align: center;
+		}
+
+		nav a {
+			color: black;
+			text-decoration: none;
+			margin: 0 5px;
+		}
+
+		nav a:hover {
+			background-color: #333;
+			color: white;
+		}
+
+		main {
+			padding: 20px;
+		}
+
+		.text-box {
+			background-color: #ddd;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+
+		.carusel {
+			width: 100%;
+			height: 400px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.carusel img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			animation: slide 12s infinite;
+			opacity: 0;
+		}
+
+		.carusel img:nth-child(1) {
+			animation-delay: 0s;
+		}
+
+		.carusel img:nth-child(2) {
+			animation-delay: 4s;
+		}
+
+		.carusel img:nth-child(3) {
+			animation-delay: 8s;
+		}
+
+		@keyframes slide {
+			0% { opacity: 0; }
+			8% { opacity: 1; }
+			33% { opacity: 1; }
+			41% { opacity: 0; }
+			100% { opacity: 0; }
+		}
+
+		footer {
+			background-color: #333;
+			color: white;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Ștefan Borodachi</h1>
+	</header>
+
+	<nav>
+		<a href="#despre">Despre</a>
+		<a href="#portofoliu">Portofoliu</a>
+		<a href="#contact">Contact</a>
+	</nav>
+
+	<main>
+		<div class="text-box" id="despre">
+			<h2>Despre Mine</h2>
+			<p>Aici puteți afla mai multe despre mine. Sunt un elev și sunt în clasa 7A  în Liceul Teoretic "Dante Aligheri".</p>
+			<p>Misiunea mea este să învăț cîte mai multe și să devin o persoană de succes.</p>
+		</div>
+
+		<div class="text-box" id="portofoliu">
+			<h2>Portofoliu</h2>
+			<p>Aici puteți vedea câteva poze cu mine.</p>
+			<div class="carusel">
+				<img src="c:\Users\Дину\Downloads\20231028_134806.jpg" alt="Imagine 1">
+				<img src="c:\Users\Дину\Desktop\20231028_134813.jpg" alt="Imagine 2">
+				<img src="c:\Users\Дину\Desktop\20231028_134751.jpg" alt="Imagine 3">
+			</div>
+		</div>
+
+		<div class="text-box" id="contact">
+			<h2>Contact</h2>
+			<p>Dacă aveți o întrebare,puteți să mă contactați la următoarea adresă de email:</p>
+			<ul>
+				<li><a href="stefanborodachi26@gmail.com">email1@examplu.com</a></li>
+			</ul>
+		</div>
+	</main>
+
+	<footer>
+		<p>Copyright © 2024 Borodachi Ștefan</p>
+	</footer>
+</body>
+</html>
